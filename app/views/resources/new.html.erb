@@ -7,5 +7,7 @@
 <%= f.text_field :description %>
 <%= f.label :image %>
 <%= f.text_field :image %>
+<%= f.label :resource_type %>
+<%= f.select :resource_type, ["Video", "Book", "Phone Number", "Website", "Shelter", "Place to Eat", "Place to Sleep" ] %>
 <%= f.submit %>
 <% end %>

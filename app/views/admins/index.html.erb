@@ -10,5 +10,5 @@
 
 
 <% @current_admin.resources.each do |resource| %>
-<div>Title: <%= link_to resource.title %>  </div>
+<div>Title: <%= link_to resource.title, resource %>  </div>
 <% end %>
