@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-    before_action :check_for_login # :check_for_admin, :only => [:index]
+    before_action :check_for_login, :only => [:create, :new]
 
     def index
         @resources = Resource.all 
