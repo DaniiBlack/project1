@@ -12,7 +12,14 @@
   </head>
 
   <body>
-  <div class="container">
+  <nav class="admin-nav">
+    <%= link_to "All Resources", resources_path %>
+    <% if @current_admin.present? %>
+      <%= link_to "Home", admins_path %>
+      <%= link_to "Log Out", login_path, :method => 'delete' %>
+      <% end %>
+    <%= link_to "" %>
+  </nav>
 
 
     <%= yield %>

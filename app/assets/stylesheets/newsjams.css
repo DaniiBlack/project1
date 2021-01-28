@@ -55,4 +55,10 @@ a, a:visited {
     justify-content: space-between;
 }
 
+.admin-nav {
+    text-align: right;
+}
 
+img {
+    max-width: 200px;
+}

@@ -1,6 +1,12 @@
 <h1>Some Resources</h1>
-    <% @resources.each do |resource| %>
-
-    <div>Title: <%= resource.title %>  </div>
+<%= form_tag resources_path, :method => "get" do %>
+    <%= label_tag(:search, "What resource are you searching for?") %>
+    <%= select_tag :search, options_for_select(["Video", "Book", "Phone Number", "Website", "Shelter", "Place to Eat", "Place to Sleep" ], params[:search]) %>
+    <%= submit_tag("Search", :resource_type => nil) %>
     <% end %>
+    <ul>
+    <% @resources.each do |resource| %>
+    <li><%= link_to resource.title, resource %></li>
+    <% end %>
+    </ul>
     

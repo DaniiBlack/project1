@@ -1,16 +1,14 @@
 <p> Hello!
-<%= @current_admin.username %>
+    <%= @current_admin.username %>
 </p>
 
-<div>
+<%= image_tag @current_admin.image %>
+
+<div class="add-resource">
+    <%= link_to 'Add Resource', new_resource_path %>
 </div>
 
 
-    <% @current_admin.resources.each do |resource| %>
-
-    <div>Title: <%= link_to resource.title %>  </div>
-    <% end %>
-
-CLOUDINARY_API_SECRET=KXkNAhIUsPYqig7l_QU6JSvOyOw
-CLOUDINARY_CLOUD_NAME=deq4oqjip
-CLOUDINARY_API_KEY=134342859114186
+<% @current_admin.resources.each do |resource| %>
+<div>Title: <%= link_to resource.title %>  </div>
+<% end %>

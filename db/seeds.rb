@@ -1,8 +1,8 @@
 Admin.destroy_all
-a1 = Admin.create(:username => 'Alan Moore', :email => 'alan.moore@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
-a2 = Admin.create(:username => 'Spider Jerusalem', :email => 'spider.jerusalem@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
+a1 = Admin.create(:username => 'Yelena', :email => 'channon.y@gmail.com.au', :image => 'https://static.wikia.nocookie.net/marvel_dc/images/7/7d/Transmetropolitan_Vol_1_46.jpg', :password => "password")
+a2 = Admin.create(:username => 'Spider Jerusalem', :email => 'spider.j@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
 a3 = Admin.create(:username => 'Cat', :email => 'cat@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
-a4 = Admin.create(:username => 'Jamie Hewlett',  :email => 'jamie.hewlett@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
+a4 = Admin.create(:username => 'Jamie Hewlett',  :email => 'jamie.h@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
 a5 = Admin.create(:username => 'Tank Girl', :email => 'booga@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
  puts "#{ Admin.count } admins created"
 # 
