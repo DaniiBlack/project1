@@ -1,6 +1,16 @@
-<div>Hello!</div>
+<p> Hello!
 <%= @current_admin.username %>
+</p>
+
+<div>
+</div>
+
+
     <% @current_admin.resources.each do |resource| %>
 
-    <div>Title: <%= resource.title %>  </div>
+    <div>Title: <%= link_to resource.title %>  </div>
     <% end %>
+
+CLOUDINARY_API_SECRET=KXkNAhIUsPYqig7l_QU6JSvOyOw
+CLOUDINARY_CLOUD_NAME=deq4oqjip
+CLOUDINARY_API_KEY=134342859114186
