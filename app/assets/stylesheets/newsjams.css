@@ -1,9 +1,11 @@
 body {
     background-color: pink;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
+    color: blue;
 }
 
 .direct {
@@ -21,5 +23,36 @@ a {
 
 .home-container {
     height: 100%;
-    
 }
+
+.sign-in-fields {
+    padding: 5px;
+}
+
+.sign-in-button {
+    background-color: white;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.sign-in-container {
+    text-align: right;
+    font-size: large;
+    padding: 20px;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign-up {
+    justify-content: flex-end;
+    font-size: larger;
+}
+
+.sign-in-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+

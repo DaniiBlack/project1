@@ -1,0 +1,6 @@
+<div>Hello!</div>
+<%= @current_admin.username %>
+    <% @current_admin.resources.each do |resource| %>
+
+    <div>Title: <%= resource.title %>  </div>
+    <% end %>

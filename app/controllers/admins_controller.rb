@@ -1,8 +1,8 @@
 class AdminsController < ApplicationController
-   before_action :check_for_admin, :only => [:index]
+   before_action :check_for_login, :only => [:index]
 
     def index
-        @admins = Admin.all
+        
     end
 
     def new 
@@ -13,7 +13,7 @@ class AdminsController < ApplicationController
         @admin = Admin.new admin_params
         if @admin.save
             session[:admin_id] = @admin.id
-            redirect_to root_path
+            redirect_to admins_path
         else
             render :new
         end
@@ -21,6 +21,8 @@ class AdminsController < ApplicationController
 
     private
     def admin_params
-        params.require(:admin).permit(:email, :password, :password_confirmation)
+        params.require(:admin).permit(:email, :username, :password, :password_confirmation)
     end
 end
+
+# Image, title, add a new resource button, make name a link back to their page annnddd heading "your shared sources"

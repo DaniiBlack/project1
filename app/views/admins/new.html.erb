@@ -1,4 +1,4 @@
-<h1>Sign Up</h1>
+<div class="sign-in-container">
 
 <% if @admin.errors.any? %>
   <ol>
@@ -9,20 +9,26 @@
 <% end %>
 
 <%= form_for @admin do |f| %>
-  <div class="form-group">
+  <div class="sign-in-fields">
+    <%= f.label :username %>
+    <%= f.text_field :username, :required => true, :class => 'form-control' %>
+  </div>
+
+    <div class="sign-in-fields">
     <%= f.label :email %>
     <%= f.email_field :email, :required => true, :class => 'form-control' %>
   </div>
 
-  <div class="form-group">
+  <div class="sign-in-fields">
     <%= f.label :password %>
     <%= f.password_field :password, :class => 'form-control' %>
   </div>
 
-  <div class="form-group">
+  <div class="sign-in-fields">
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, :class => 'form-control' %>
   </div>
 
-  <%= f.submit "Sign up!", :class => 'btn btn-success btn-lg' %>
+  <%= f.submit "Submit!", :class => 'btn btn-success btn-lg sign-in-button'  %>
 <% end %>
+</div>
