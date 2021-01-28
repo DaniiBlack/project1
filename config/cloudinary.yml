@@ -1,19 +1,21 @@
 ---
 development:
-  cloud_name: deq4oqjip
-  api_key: '134342859114186'
-  api_secret: KXkNAhIUsPYqig7l_QU6JSvOyOw
+  cloud_name: Rails.application.secrets.cloudinary_cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
   enhance_image_tag: true
   static_file_support: false
-production:
-  cloud_name: deq4oqjip
-  api_key: '134342859114186'
-  api_secret: KXkNAhIUsPYqig7l_QU6JSvOyOw
+
+  production:
+  cloud_name: Rails.application.secrets.cloudinary_cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
   enhance_image_tag: true
   static_file_support: true
-test:
-  cloud_name: deq4oqjip
-  api_key: '134342859114186'
-  api_secret: KXkNAhIUsPYqig7l_QU6JSvOyOw
+  
+  test:
+  cloud_name: Rails.application.secrets.cloudinary_cloud_name
+  api_key: Rails.application.secrets.cloudinary_api_key
+  api_secret: Rails.application.secrets.cloudinary_api_secret
   enhance_image_tag: true
   static_file_support: false
