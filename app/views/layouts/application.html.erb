@@ -14,7 +14,7 @@
   <body>
   <nav class="admin-nav">
     <%= link_to "All |", resources_path %>
-    <%= link_to "Register", resources_path %>
+    <%= link_to "Register", new_admin_path %>
     <% if @current_admin.present? %>
       <%= link_to "Home", admins_path %>
       <%= link_to "Log Out", login_path, :method => 'delete' %>
