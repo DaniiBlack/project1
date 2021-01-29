@@ -1,9 +1,9 @@
 Admin.destroy_all
 a1 = Admin.create(:username => 'Yelena', :email => 'channon.y@gmail.com.au', :image => 'https://static.wikia.nocookie.net/marvel_dc/images/7/7d/Transmetropolitan_Vol_1_46.jpg', :password => "password")
 a2 = Admin.create(:username => 'Spider Jerusalem', :email => 'spider.j@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
-a3 = Admin.create(:username => 'Cat', :email => 'cat@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
-a4 = Admin.create(:username => 'Jamie Hewlett',  :email => 'jamie.h@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
-a5 = Admin.create(:username => 'Tank Girl', :email => 'booga@gmail.com.au', :image => 'https://ihatehate.files.wordpress.com/2015/05/spider-useless-bastards.jpg', :password => "password")
+a3 = Admin.create(:username => 'Cat', :email => 'cat@gmail.com.au', :image => 'https://comicvine1.cbsistatic.com/uploads/scale_small/0/1808/210883-140144-cat.jpg', :password => "password")
+a4 = Admin.create(:username => 'Jamie Hewlett',  :email => 'jamie.h@gmail.com.au', :image => 'https://www.economist.com/img/b/1000/563/90/sites/default/files/20180707_BLP531.jpg', :password => "password")
+a5 = Admin.create(:username => 'Tank Girl', :email => 'booga@gmail.com.au', :image => 'https://cnet1.cbsistatic.com/img/JVowmFoaOxK_wg6P3rTSy5cv7_E=/1092x0/2019/09/10/7528a787-67c9-479f-afd0-b2a02f0811c8/tankgirl1.jpg', :password => "password")
  puts "#{ Admin.count } admins created"
 # 
  Resource.destroy_all
