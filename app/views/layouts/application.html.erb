@@ -15,6 +15,7 @@
   <nav class="admin-nav">
     <%= link_to "All |", resources_path %>
     <%= link_to "Register", new_admin_path %>
+    <%= link_to "Bookmarked", new_admin_path %> <!-- Must add path here and ingrate consumer tracking -->
     <% if @current_admin.present? %>
       <%= link_to "Home", admins_path %>
       <%= link_to "Log Out", login_path, :method => 'delete' %>
