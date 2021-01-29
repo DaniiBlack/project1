@@ -13,13 +13,18 @@
 
   <body>
   <nav class="admin-nav">
-    <%= link_to "All Resources", resources_path %>
+    <%= link_to "All |", resources_path %>
+    <%= link_to "Register", resources_path %>
     <% if @current_admin.present? %>
       <%= link_to "Home", admins_path %>
       <%= link_to "Log Out", login_path, :method => 'delete' %>
       <% end %>
-    <%= link_to "" %>
   </nav>
+
+      <span id="trigger">
+    hover here
+    <img src="https://cms.qz.com/wp-content/uploads/2013/09/candy-crush.jpg?quality=80&strip=all&w=1800">
+    </span>
 
 
     <%= yield %>
