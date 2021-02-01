@@ -1,6 +1,8 @@
 body {
     background-color: pink;
     font-family: 'Roboto Condensed', sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 a, a:visited {
